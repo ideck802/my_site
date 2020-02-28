@@ -1,0 +1,6 @@
+.bgimg1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/architect.jpg);
+  min-height: 100%;
+}
