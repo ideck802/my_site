@@ -32,6 +32,14 @@ body, html {
 </style>
 <body>
 
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <button class="tablinks" onclick="w3_close()">X</a>
+  <button class="tablinks" onclick="changeTab(event, 'London'); w3_close()" id="defaultOpen"><p class="text-sideways">London</p></button>
+  <button class="tablinks" onclick="changeTab(event, 'Paris'); w3_close()"><p class="text-sideways">Paris</p></button>
+  <button class="tablinks" onclick="changeTab(event, 'Tokyo'); w3_close()"><p class="text-sideways">Tokyo</p></button>
+</nav>
+
 <!-- Navbar (sit on top) -->
 <div>
   <div class="w3-bar w3-white w3-card" id="myNavbar">
@@ -49,14 +57,6 @@ body, html {
     </a>
   </div>
 </div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <button class="tablinks" onclick="w3_close()">X</a>
-  <button class="tablinks" onclick="changeTab(event, 'London')" id="defaultOpen"><p class="text-sideways">London</p></button>
-  <button class="tablinks" onclick="changeTab(event, 'Paris')"><p class="text-sideways">Paris</p></button>
-  <button class="tablinks" onclick="changeTab(event, 'Tokyo')"><p class="text-sideways">Tokyo</p></button>
-</nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
