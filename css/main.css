@@ -34,3 +34,14 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+
+.w3-sidebar {
+  width: 50px;
+}
+.w3-sidebar button {
+  width: 100%;
+  font-size: 20px;
+}
+.w3-sidebar button p {
+  margin: 0px;
+}

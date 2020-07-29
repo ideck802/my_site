@@ -33,7 +33,7 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="">
+<div>
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
     <!-- Right-sided navbar links -->
@@ -52,10 +52,10 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <button class="tablinks w3-bar-item w3-button" onclick="changeTab(event, 'London')">London</button>
-  <button class="tablinks w3-bar-item w3-button" onclick="changeTab(event, 'Paris')">Paris</button>
-  <button class="tablinks w3-bar-item w3-button" onclick="changeTab(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="w3_close()">X</a>
+  <button class="tablinks" onclick="changeTab(event, 'London')" id="defaultOpen"><p class="text-sideways">London</p></button>
+  <button class="tablinks" onclick="changeTab(event, 'Paris')"><p class="text-sideways">Paris</p></button>
+  <button class="tablinks" onclick="changeTab(event, 'Tokyo')"><p class="text-sideways">Tokyo</p></button>
 </nav>
 
 <!-- Header with full-height image -->
@@ -76,7 +76,7 @@ body, html {
   </div>
 </header>
 
-<div id="sideMenu" class="tab w3-hide w3-animate-left">
+<div id="sideMenu" class="tab w3-hide w3-animate-left w3-hide-small">
   <button class="tablinks" onclick="changeTab(event, 'London')" id="defaultOpen"><p class="text-sideways">London</p></button>
   <button class="tablinks" onclick="changeTab(event, 'Paris')"><p class="text-sideways">Paris</p></button>
   <button class="tablinks" onclick="changeTab(event, 'Tokyo')"><p class="text-sideways">Tokyo</p></button>
