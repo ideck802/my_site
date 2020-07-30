@@ -34,10 +34,10 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <button class="tablinks" onclick="w3_close()">X</a>
-  <button class="tablinks" onclick="changeTab(event, 'London'); w3_close()" id="defaultOpen"><p class="text-sideways">London</p></button>
-  <button class="tablinks" onclick="changeTab(event, 'Paris'); w3_close()"><p class="text-sideways">Paris</p></button>
-  <button class="tablinks" onclick="changeTab(event, 'Tokyo'); w3_close()"><p class="text-sideways">Tokyo</p></button>
+  <button class="tablinks w3-button" onclick="w3_close()">X</a>
+  <button class="tablinks w3-button" onclick="changeTab(event, 'London'); w3_close()" id="defaultOpen"><p class="text-sideways w3-center">London</p></button>
+  <button class="tablinks w3-button" onclick="changeTab(event, 'Paris'); w3_close()"><p class="text-sideways w3-center">Paris</p></button>
+  <button class="tablinks w3-button" onclick="changeTab(event, 'Tokyo'); w3_close()"><p class="text-sideways w3-center">Tokyo</p></button>
 </nav>
 
 <!-- Navbar (sit on top) -->
@@ -77,9 +77,9 @@ body, html {
 </header>
 
 <div id="sideMenu" class="tab w3-hide w3-animate-left w3-hide-small">
-  <button class="tablinks" onclick="changeTab(event, 'London')" id="defaultOpen"><p class="text-sideways">London</p></button>
-  <button class="tablinks" onclick="changeTab(event, 'Paris')"><p class="text-sideways">Paris</p></button>
-  <button class="tablinks" onclick="changeTab(event, 'Tokyo')"><p class="text-sideways">Tokyo</p></button>
+  <button class="tablinks w3-button" onclick="changeTab(event, 'London')" id="defaultOpen"><p class="text-sideways">London</p></button>
+  <button class="tablinks w3-button" onclick="changeTab(event, 'Paris')"><p class="text-sideways">Paris</p></button>
+  <button class="tablinks w3-button" onclick="changeTab(event, 'Tokyo')"><p class="text-sideways">Tokyo</p></button>
 </div>
 
 <div id="London" class="tabcontent">

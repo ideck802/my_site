@@ -41,7 +41,9 @@
 .w3-sidebar button {
   width: 100%;
   font-size: 20px;
+  padding: 20px 0px 20px 0px;
+  margin-top: 10px;
 }
 .w3-sidebar button p {
-  margin: 0px;
+  margin: auto;
 }
