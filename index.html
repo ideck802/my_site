@@ -35,20 +35,20 @@ body, html, .tabcontent {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <button class="tablinks w3-button" onclick="w3_close()">X</a>
-  <button class="tablinks w3-button" onclick="changeTab(event, 'London'); w3_close()" id="defaultOpen"><p class="text-sideways w3-center">London</p></button>
-  <button class="tablinks w3-button" onclick="changeTab(event, 'Paris'); w3_close()"><p class="text-sideways w3-center">Paris</p></button>
-  <button class="tablinks w3-button" onclick="changeTab(event, 'Tokyo'); w3_close()"><p class="text-sideways w3-center">Tokyo</p></button>
+  <a href="index.html#london"><button class="tablinks w3-button" onclick="changeTab(event, 'London'); w3_close()" id="defaultOpen"><p class="text-sideways w3-center">London</p></button></a>
+  <a href="index.html#paris"><button class="tablinks w3-button" onclick="changeTab(event, 'Paris'); w3_close()"><p class="text-sideways w3-center">Paris</p></button></a>
+  <a href="index.html#tokyo"><button class="tablinks w3-button" onclick="changeTab(event, 'Tokyo'); w3_close()"><p class="text-sideways w3-center">Tokyo</p></button></a>
 </nav>
 
 <!-- Navbar (sit on top) -->
 <div>
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="#london" class="tablinks w3-bar-item w3-button w3-wide" onclick="changeTab(event, 'London')">LOGO</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <button class="tablinks w3-bar-item w3-button" onclick="changeTab(event, 'London')">London</button>
-      <button class="tablinks w3-bar-item w3-button" onclick="changeTab(event, 'Paris')">Paris</button>
-      <button class="tablinks w3-bar-item w3-button" onclick="changeTab(event, 'Tokyo')">Tokyo</button>
+      <a href="index.html#london"><button class="tablinks w3-bar-item w3-button" onclick="changeTab(event, 'London')">London</button></a>
+      <a href="index.html#paris"><button class="tablinks w3-bar-item w3-button" onclick="changeTab(event, 'Paris')">Paris</button></a>
+      <a href="index.html#tokyo"><button class="tablinks w3-bar-item w3-button" onclick="changeTab(event, 'Tokyo')">Tokyo</button></a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -79,9 +79,9 @@ body, html, .tabcontent {
   </header>
 
   <div id="sideMenu" class="tab w3-hide w3-animate-left w3-hide-small">
-    <button class="tablinks w3-button" onclick="changeTab(event, 'London')" id="defaultOpen"><p class="text-sideways">London</p></button>
-    <button class="tablinks w3-button" onclick="changeTab(event, 'Paris')"><p class="text-sideways">Paris</p></button>
-    <button class="tablinks w3-button" onclick="changeTab(event, 'Tokyo')"><p class="text-sideways">Tokyo</p></button>
+    <a href="index.html#london" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, 'London')" id="defaultOpen"><p class="text-sideways">London</p></button></a>
+    <a href="index.html#paris" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, 'Paris')"><p class="text-sideways">Paris</p></button></a>
+    <a href="index.html#tokyo" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, 'Tokyo')"><p class="text-sideways">Tokyo</p></button></a>
   </div>
 
   <!-- About Section -->
@@ -430,6 +430,19 @@ function checkScroll() {
     document.getElementById("sideMenu").classList.remove("w3-show");
   }
 }
+
+myurl = window.location.href.split(/[#]+/).pop();
+
+function preOpen () {
+  if (myurl == "london") {
+    changeTab(event, 'London');
+  } else if (myurl == "paris" ) {
+    changeTab(event, 'Paris');
+  } else if (myurl == "tokyo") {
+    changeTab(event, 'Tokyo');
+  }
+};
+preOpen();
 </script>
 
 </body>
