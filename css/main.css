@@ -6,6 +6,7 @@
   background-color: #f1f1f1;
   width: 10%;
   height: 100%;
+  z-index: 100;
 }
 
 /* Style the buttons inside the tab */
@@ -52,3 +53,12 @@
 .w3-sidebar button p {
   margin: auto;
 }
+
+
+.tabcontent {
+  margin-left: 10%;
+}
+
+/*.bgimg-1 {
+  margin-left: -10%;
+}*/
