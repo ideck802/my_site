@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"> <!--USE: font-family: 'Black Ops One'; -->
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet"> <!--USE: font-family: 'Audiowide'; -->
 <link rel="stylesheet" href="./css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -59,9 +60,9 @@ body, html, .tabcontent {
 </div>
 
 <div id="sideMenu" class="tab w3-hide w3-animate-left w3-hide-small">
-  <a href="#projects" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, '_projects')" id="defaultOpen"><p class="text-sideways">Projects</p></button></a>
-  <a href="#about" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, '_about')"><p class="text-sideways">About</p></button></a>
-  <a href="#contact" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, '_contact')"><p class="text-sideways">Contact</p></button></a>
+  <a href="#projects" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, '_projects')" id="defaultOpen"><p class="text-sideways sidebar-text">Projects</p></button></a>
+  <a href="#about" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, '_about')"><p class="text-sideways sidebar-text">About</p></button></a>
+  <a href="#contact" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, '_contact')"><p class="text-sideways sidebar-text">Contact</p></button></a>
 </div>
 
 <div id="_projects" class="tabcontent">
@@ -112,49 +113,35 @@ body, html, .tabcontent {
   </div>
 
   <!-- Promo Section "Statistics" -->
-  <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-    <div class="w3-quarter">
-      <span class="w3-xxlarge">14+</span>
-      <br>Partners
-    </div>
-    <div class="w3-quarter">
-      <span class="w3-xxlarge">55+</span>
-      <br>Projects Done
-    </div>
-    <div class="w3-quarter">
-      <span class="w3-xxlarge">89+</span>
-      <br>Happy Clients
-    </div>
-    <div class="w3-quarter">
-      <span class="w3-xxlarge">150+</span>
-      <br>Meetings
+  <div class="projects-container w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <h3>Websites</h3>
+    <div class="w3-container project-links-container">
+      <p class="project-link text-sideways w3-center">Site1</p>
+      <p class="project-link text-sideways w3-center">Site2</p>
+      <p class="project-link text-sideways w3-center">Site3</p>
+      <p class="project-link text-sideways w3-center">Site4</p>
+      <p class="project-link text-sideways w3-center">Site5</p>
+      <p class="project-link text-sideways w3-center">Site6</p>
+      <p class="project-link text-sideways w3-center">Site7</p>
+      <p class="project-link text-sideways w3-center">Site8</p>
+      <p class="project-link text-sideways w3-center">Site9</p>
+      <p class="project-link text-sideways w3-center">Site10</p>
     </div>
   </div>
-
-  <!-- Skills Section -->
-  <div class="w3-container w3-light-grey w3-padding-64">
-    <div class="w3-row-padding">
-      <div class="w3-col m6">
-        <h3>Our Skills.</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-        tempor incididunt ut labore et dolore.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-        tempor incididunt ut labore et dolore.</p>
-      </div>
-      <div class="w3-col m6">
-        <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
-        <div class="w3-grey">
-          <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
-        </div>
-        <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
-        <div class="w3-grey">
-          <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-        </div>
-        <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
-        <div class="w3-grey">
-          <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-        </div>
-      </div>
+  <!-- Promo Section "Statistics" -->
+  <div class="projects-container w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <h3>Websites</h3>
+    <div class="w3-container project-links-container">
+      <p class="project-link text-sideways w3-center">Site1</p>
+      <p class="project-link text-sideways w3-center">Site2</p>
+      <p class="project-link text-sideways w3-center">Site3</p>
+      <p class="project-link text-sideways w3-center">Site4</p>
+      <p class="project-link text-sideways w3-center">Site5</p>
+      <p class="project-link text-sideways w3-center">Site6</p>
+      <p class="project-link text-sideways w3-center">Site7</p>
+      <p class="project-link text-sideways w3-center">Site8</p>
+      <p class="project-link text-sideways w3-center">Site9</p>
+      <p class="project-link text-sideways w3-center">Site10</p>
     </div>
   </div>
 
@@ -209,7 +196,25 @@ body, html, .tabcontent {
 </div>
 
 
+<script>
+jQuery(function ($) {
+    $.fn.hScroll = function (amount) {
+        amount = amount || 120;
+        $(this).bind("DOMMouseScroll mousewheel", function (event) {
+            var oEvent = event.originalEvent,
+                direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
+                position = $(this).scrollLeft();
+            position += direction > 0 ? -amount : amount;
+            $(this).scrollLeft(position);
+            event.preventDefault();
+        })
+    };
+});
 
+$(document).ready(function() {
+    $('.project-links-container').hScroll(60); // You can pass (optionally) scrolling amount
+});
+</script>
 <script>
 // Modal Image Gallery
 function onClick(element) {

@@ -30,6 +30,11 @@
   transform: rotate(-180deg);
   margin: auto;
 }
+.sidebar-text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
 .tablinks {
   font-size: 20px;
   font-family: 'Audiowide';
@@ -62,3 +67,29 @@
 /*.bgimg-1 {
   margin-left: -10%;
 }*/
+
+.projects-container {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition:         transform .2s ease-in-out;
+}
+.projects-container:hover {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+.project-links-container {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.project-links-container::-webkit-scrollbar {
+  display: none;  /*Chrome, Safari and Opera */
+}
+.project-link {
+  display: inline-block;
+  padding: 50px;
+  margin: 10px;
+  border: 1px solid black;
+}
