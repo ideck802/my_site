@@ -206,13 +206,15 @@ jQuery(function ($) {
                 position = $(this).scrollLeft();
             position += direction > 0 ? -amount : amount;
             $(this).scrollLeft(position);
-            event.preventDefault();
+            if((position>0) && (position+$(this).innerWidth()<=$(this)[0].scrollWidth)) {
+              event.preventDefault();
+            }
         })
     };
 });
 
 $(document).ready(function() {
-    $('.project-links-container').hScroll(60); // You can pass (optionally) scrolling amount
+    $('.project-links-container').hScroll(30); // You can pass (optionally) scrolling amount
 });
 </script>
 <script>
