@@ -77,6 +77,7 @@
           transform: rotate(2deg);
 }
 .project-links-container {
+  border: 1px solid black;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -89,7 +90,18 @@
 }
 .project-link {
   display: inline-block;
+  width: 100px;
+  height: 200px;
   padding: 50px;
-  margin: 10px;
   border: 1px solid black;
+  text-decoration: none;
+}
+.project-link:hover {
+  padding-left: 70px;
+}
+.project-link span {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
