@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Isaac Decker</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -34,7 +34,7 @@ body, html, .tabcontent {
 <body>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <button class="tablinks w3-button" onclick="w3_close()">X</a>
   <a href="#projects"><button class="tablinks w3-button" onclick="changeTab(event, '_projects'); w3_close()" id="defaultOpen"><p class="text-sideways w3-center">Projects</p></button></a>
   <a href="#about"><button class="tablinks w3-button" onclick="changeTab(event, '_about'); w3_close()"><p class="text-sideways w3-center">About</p></button></a>
@@ -43,8 +43,8 @@ body, html, .tabcontent {
 
 <!-- Navbar (sit on top) -->
 <div>
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#projects" class="tablinks w3-bar-item w3-button w3-wide" onclick="changeTab(event, '_projects')">LOGO</a>
+  <div class="w3-bar w3-card mainNavbar">
+    <a href="#projects" class="tablinks w3-bar-item w3-button w3-wide" onclick="changeTab(event, '_projects')">ISAAC</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#projects"><button class="tablinks w3-bar-item w3-button" onclick="changeTab(event, '_projects')">Projects</button></a>
@@ -60,15 +60,15 @@ body, html, .tabcontent {
 </div>
 
 <div id="sideMenu" class="tab w3-hide w3-animate-left w3-hide-small">
-  <a href="#projects" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, '_projects')" id="defaultOpen"><p class="text-sideways sidebar-text">Projects</p></button></a>
-  <a href="#about" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, '_about')"><p class="text-sideways sidebar-text">About</p></button></a>
-  <a href="#contact" style="text-decoration:none;"><button class="tablinks w3-button" onclick="changeTab(event, '_contact')"><p class="text-sideways sidebar-text">Contact</p></button></a>
+  <a href="#projects" style="text-decoration:none;"><button class="tablinks" onclick="changeTab(event, '_projects')" id="defaultOpen"><p class="text-sideways sidebar-text">Projects</p></button></a>
+  <a href="#about" style="text-decoration:none;"><button class="tablinks" onclick="changeTab(event, '_about')"><p class="text-sideways sidebar-text">About</p></button></a>
+  <a href="#contact" style="text-decoration:none;"><button class="tablinks" onclick="changeTab(event, '_contact')"><p class="text-sideways sidebar-text">Contact</p></button></a>
 </div>
 
 <div id="_projects" class="tabcontent">
   <!-- Header with full-height image -->
   <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-left w3-text-white" style="padding:48px">
+    <div class="w3-display-left w3-text-white" style="padding:48px;padding-right:0px;">
       <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
       <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
       <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
@@ -180,6 +180,17 @@ body, html, .tabcontent {
 </div>
 
 
+<script>
+var observer = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true) {
+    document.querySelector(".projects-container").classList.add("projects-container-rotate");
+  } else {
+    document.querySelector(".projects-container").classList.remove("projects-container-rotate");
+  }
+}, { threshold: [0.799] });
+
+observer.observe(document.querySelector(".projects-container"));
+</script>
 <script>
 jQuery(function ($) {
     $.fn.hScroll = function (amount) {
