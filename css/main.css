@@ -10,6 +10,16 @@ body {
   background: #333533;
 }
 
+.bgimg-1 {
+  background: linear-gradient(90deg, transparent, #b618b7, #f26419);
+  /*background-position: center;
+  background-size: cover;
+  background-image: url("../images/mac.jpg");*/
+  min-height: 100%;
+  font-family: 'Audiowide';
+}
+
+
 .tab {
   position: fixed;
   top: 0px;
@@ -92,12 +102,49 @@ body {
 }*/
 
 .projects-container {
+  background: #616161;
+}
+.rotating_obj {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition:         transform .2s ease-in-out;
+}
+.rotating_title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  right: 1px;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition:         transform .2s ease-in-out;
+}
+.rotating_obj_back {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition:         transform .2s ease-in-out;
+}
+.rotating_title_back {
+  width: 100%;
+  height: 100%;
   -webkit-transition: -webkit-transform .2s ease-in-out;
           transition:         transform .2s ease-in-out;
 }
 .rotate-forward {
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
+}
+.rotate-back {
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+.rotate-forward_title {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+.rotate-back_title {
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
 }
 .project-links-container {
   border: 1px solid black;

@@ -19,14 +19,6 @@ body, html, .tabcontent {
   line-height: 1.8;
 }
 
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("./images/mac.jpg");
-  min-height: 100%;
-}
-
 .w3-bar .w3-button {
   padding: 16px;
 }
@@ -69,18 +61,26 @@ body, html, .tabcontent {
   <!-- Header with full-height image -->
   <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
     <div class="w3-display-left w3-text-white" style="padding:48px;padding-right:0px;">
-      <span class="w3-xxlarge w3-hide-small">Hello and welcome. I am Isaac Decker.</span><br>
-      <span class="w3-xlarge w3-hide-large w3-hide-medium">Hello and welcome. I am Isaac Decker.</span><br>
-      <span class="w3-medium">I like to make websites, code and <br class="w3-hide-large w3-hide-medium"> I enjoy
+      <div class="w3-xxlarge w3-hide-small rotating_title">Hello and welcome. I am Isaac Decker.</div><br>
+      <div class="w3-xlarge w3-hide-large w3-hide-medium rotating_title">Hello and welcome. I am Isaac Decker.</div><br>
+      <div class="w3-medium">I like to make websites, code and <br class="w3-hide-large w3-hide-medium"> I enjoy
       <div class="antiClock">
         <span>Thing.</span>
         <span>3d printing</span>
         <span>electronics</span>
         <span>video games</span>
         <span>Elegant.</span>
-      </div></span>
+      </div></div>
     </div>
-    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <div class="w3-display-right w3-text-black w3-xlarge w3-hide-small w3-hide-medium" style="padding:24px 48px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i><br>
+      <i class="fa fa-instagram w3-hover-opacity"></i><br>
+      <i class="fa fa-snapchat w3-hover-opacity"></i><br>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i><br>
+      <i class="fa fa-twitter w3-hover-opacity"></i><br>
+      <i class="fa fa-linkedin w3-hover-opacity"></i><br>
+    </div>
+    <div class="w3-display-bottomleft w3-text-black w3-xlarge w3-hide-large" style="padding:24px 48px">
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
       <i class="fa fa-instagram w3-hover-opacity"></i>
       <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -119,19 +119,21 @@ body, html, .tabcontent {
   </div>
 
   <!-- Promo Section "Statistics" -->
-  <div class="projects-container w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-    <h3>Websites</h3>
-    <div class="w3-container project-links-container">
-      <a href="#test" class="project-link text-sideways w3-center"><span>Site1</span></a>
-      <a href="#test" class="project-link text-sideways w3-center"><span>Site2</span></a>
-      <a href="#test" class="project-link text-sideways w3-center"><span>Site3</span></a>
-      <a href="#test" class="project-link text-sideways w3-center"><span>Site4</span></a>
-      <a href="#test" class="project-link text-sideways w3-center"><span>Site5</span></a>
-      <a href="#test" class="project-link text-sideways w3-center"><span>Site6</span></a>
-      <a href="#test" class="project-link text-sideways w3-center"><span>Site7</span></a>
-      <a href="#test" class="project-link text-sideways w3-center"><span>Site8</span></a>
-      <a href="#test" class="project-link text-sideways w3-center"><span>Site9</span></a>
-      <a href="#test" class="project-link text-sideways w3-center"><span>Site10</span></a>
+  <div class="projects-container w3-container w3-row w3-center w3-padding-64">
+    <div class="rotating_obj">
+      <h3>Websites</h3>
+      <div class="w3-container project-links-container">
+        <a href="#test" class="project-link text-sideways w3-center"><span>Site1</span></a>
+        <a href="#test" class="project-link text-sideways w3-center"><span>Site2</span></a>
+        <a href="#test" class="project-link text-sideways w3-center"><span>Site3</span></a>
+        <a href="#test" class="project-link text-sideways w3-center"><span>Site4</span></a>
+        <a href="#test" class="project-link text-sideways w3-center"><span>Site5</span></a>
+        <a href="#test" class="project-link text-sideways w3-center"><span>Site6</span></a>
+        <a href="#test" class="project-link text-sideways w3-center"><span>Site7</span></a>
+        <a href="#test" class="project-link text-sideways w3-center"><span>Site8</span></a>
+        <a href="#test" class="project-link text-sideways w3-center"><span>Site9</span></a>
+        <a href="#test" class="project-link text-sideways w3-center"><span>Site10</span></a>
+      </div>
     </div>
   </div>
 
@@ -269,7 +271,7 @@ body, html, .tabcontent {
 
 <script>
 //for clockwise
-const rotators = document.querySelectorAll('.projects-container');
+const rotators = document.querySelectorAll('.rotating_obj');
 
 var observer = new IntersectionObserver(function(entries) {
   entries.forEach(entry => {
@@ -279,15 +281,31 @@ var observer = new IntersectionObserver(function(entries) {
       entry.target.classList.remove('rotate-forward');
     }
   });
-}, { threshold: [0.799] });
+}, { threshold: [0.7] });
 
 rotators.forEach(rotator => {
   observer.observe(rotator);
 });
+
+const rotators2 = document.querySelectorAll('.rotating_title');
+
+var observer2 = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting === true) {
+      entry.target.classList.add('rotate-forward_title');
+    } else {
+      entry.target.classList.remove('rotate-forward_title');
+    }
+  });
+}, { threshold: [1], rootMargin: ['-100px 1px 1px 1px'] });
+
+rotators2.forEach(rotator => {
+  observer2.observe(rotator);
+});
 </script>
 <script>
 //for anticlockwise
-const rotatorsBackwards = document.querySelectorAll('.projects-container-hey');
+const rotatorsBackwards = document.querySelectorAll('.rotating_obj_back');
 
 var observer = new IntersectionObserver(function(entries) {
   entries.forEach(entry => {
@@ -297,10 +315,26 @@ var observer = new IntersectionObserver(function(entries) {
       entry.target.classList.remove('rotate-back');
     }
   });
-}, { threshold: [0.799] });
+}, { threshold: [0.7] });
 
 rotatorsBackwards.forEach(rotator => {
   observer.observe(rotator);
+});
+
+const rotatorsBackwards2 = document.querySelectorAll('.rotating_title_back');
+
+var observer2 = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting === true) {
+      entry.target.classList.add('rotate-back_title');
+    } else {
+      entry.target.classList.remove('rotate-back_title');
+    }
+  });
+}, { threshold: [1], rootMargin: ['20px'] });
+
+rotatorsBackwards2.forEach(rotator => {
+  observer2.observe(rotator);
 });
 </script>
 <script>
