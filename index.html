@@ -53,7 +53,7 @@ body, html, .tabcontent {
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="tablinks w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -66,6 +66,98 @@ body, html, .tabcontent {
 </div>
 
 <div id="_projects" class="tabcontent">
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px;padding-right:0px;">
+      <span class="w3-xxlarge w3-hide-small">Hello and welcome. I am Isaac Decker.</span><br>
+      <span class="w3-xlarge w3-hide-large w3-hide-medium">Hello and welcome. I am Isaac Decker.</span><br>
+      <span class="w3-medium">I like to make websites, code and <br class="w3-hide-large w3-hide-medium"> I enjoy
+      <div class="antiClock">
+        <span>Thing.</span>
+        <span>3d printing</span>
+        <span>electronics</span>
+        <span>video games</span>
+        <span>Elegant.</span>
+      </div></span>
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center">ABOUT THE COMPANY</h3>
+    <p class="w3-center w3-large">Key features of our company</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Responsive</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Passion</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Design</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Support</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Promo Section "Statistics" -->
+  <div class="projects-container w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <h3>Websites</h3>
+    <div class="w3-container project-links-container">
+      <a href="#test" class="project-link text-sideways w3-center"><span>Site1</span></a>
+      <a href="#test" class="project-link text-sideways w3-center"><span>Site2</span></a>
+      <a href="#test" class="project-link text-sideways w3-center"><span>Site3</span></a>
+      <a href="#test" class="project-link text-sideways w3-center"><span>Site4</span></a>
+      <a href="#test" class="project-link text-sideways w3-center"><span>Site5</span></a>
+      <a href="#test" class="project-link text-sideways w3-center"><span>Site6</span></a>
+      <a href="#test" class="project-link text-sideways w3-center"><span>Site7</span></a>
+      <a href="#test" class="project-link text-sideways w3-center"><span>Site8</span></a>
+      <a href="#test" class="project-link text-sideways w3-center"><span>Site9</span></a>
+      <a href="#test" class="project-link text-sideways w3-center"><span>Site10</span></a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-center w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3>CONTACT</h3>
+    <p class="w3-large">Lets get in touch. Send us a message:</p>
+    <a href="#contact" style="text-decoration:none;"><button class="w3-button w3-black" type="submit" onclick="changeTab(event, '_contact')">SEND MESSAGE</button></a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+</div>
+
+<div id="_about" class="tabcontent">
   <!-- Header with full-height image -->
   <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
     <div class="w3-display-left w3-text-white" style="padding:48px;padding-right:0px;">
@@ -169,11 +261,6 @@ body, html, .tabcontent {
   </footer>
 </div>
 
-<div id="_about" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
-</div>
-
 <div id="_contact" class="tabcontent">
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
@@ -181,15 +268,40 @@ body, html, .tabcontent {
 
 
 <script>
+//for clockwise
+const rotators = document.querySelectorAll('.projects-container');
+
 var observer = new IntersectionObserver(function(entries) {
-	if(entries[0].isIntersecting === true) {
-    document.querySelector(".projects-container").classList.add("projects-container-rotate");
-  } else {
-    document.querySelector(".projects-container").classList.remove("projects-container-rotate");
-  }
+  entries.forEach(entry => {
+    if (entry.isIntersecting === true) {
+      entry.target.classList.add('rotate-forward');
+    } else {
+      entry.target.classList.remove('rotate-forward');
+    }
+  });
 }, { threshold: [0.799] });
 
-observer.observe(document.querySelector(".projects-container"));
+rotators.forEach(rotator => {
+  observer.observe(rotator);
+});
+</script>
+<script>
+//for anticlockwise
+const rotatorsBackwards = document.querySelectorAll('.projects-container-hey');
+
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting === true) {
+      entry.target.classList.add('rotate-back');
+    } else {
+      entry.target.classList.remove('rotate-back');
+    }
+  });
+}, { threshold: [0.799] });
+
+rotatorsBackwards.forEach(rotator => {
+  observer.observe(rotator);
+});
 </script>
 <script>
 jQuery(function ($) {
@@ -256,7 +368,7 @@ document.getElementById("defaultOpen").click();
 
 window.onscroll = function() {checkScroll()};
 function checkScroll() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
   //if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
     document.getElementById("sideMenu").classList.add("w3-show");
     document.getElementById("sideMenu").classList.remove("w3-hide");
