@@ -22,6 +22,21 @@ body {
   -webkit-text-stroke-color: #d6d84f;
   -webkit-text-fill-color: transparent;
 }
+.bgimg-1  .myName {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #242423;
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#scroll_invite {
+  font-family: 'Audiowide';
+  color: #d6d84f;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #d6d84f;
+  -webkit-text-fill-color: transparent;
+}
 
 .more_about {
   background: linear-gradient(90deg, transparent, #464746, #464746, #464746);

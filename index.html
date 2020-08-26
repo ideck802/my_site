@@ -61,8 +61,8 @@ body, html, .tabcontent {
   <!-- Header with full-height image -->
   <header class="bgimg-1 rotating_title w3-display-container w3-grayscale-min" id="home">
     <div class="w3-display-left" style="padding:48px;padding-right:24px;">
-      <div class="w3-xxxlarge w3-hide-small rotating_child">Hello and welcome. I am Isaac Decker.</div><br>
-      <div class="w3-xxlarge w3-hide-large w3-hide-medium rotating_child">Hello and welcome. I am Isaac Decker.</div><br>
+      <div class="w3-xxxlarge w3-hide-small rotating_child">Hello and welcome. I am <span class="myName">Isaac Decker</span>.</div><br>
+      <div class="w3-xxlarge w3-hide-large w3-hide-medium rotating_child">Hello and welcome. I am <span class="myName">Isaac Decker</span>.</div><br>
       <div class="w3-large w3-hide-small rotating_child_back">I like to make websites, code and I enjoy
         <div class="antiClock">
           <span>Thing.</span>
@@ -72,7 +72,7 @@ body, html, .tabcontent {
           <span>Elegant.</span>
         </div>
       </div>
-      <div class="w3-medium w3-hide-large w3-hide-medium rotating_child_back">I like to make websites, code and I enjoy
+      <div class="w3-medium w3-hide-large w3-hide-medium rotating_child_back">I like to make websites,<br> code and I enjoy
         <div class="antiClock">
           <span>Thing.</span>
           <span>3d printing</span>
@@ -83,22 +83,24 @@ body, html, .tabcontent {
       </div>
     </div>
     <div class="w3-display-right w3-xlarge w3-hide-small w3-hide-medium" style="padding:24px 48px">
-      <a href="#"><i class="fa fa-facebook-official w3-hover-opacity rotating_child2"></i></a><br>
-      <a href="#"><i class="fa fa-instagram w3-hover-opacity rotating_child_back2"></i></a><br>
-      <a href="#"><i class="fa fa-snapchat w3-hover-opacity rotating_child2"></i></a><br>
-      <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity rotating_child_back2"></i></a><br>
-      <a href="#"><i class="fa fa-twitter w3-hover-opacity rotating_child2"></i></a><br>
-      <a href="#"><i class="fa fa-linkedin w3-hover-opacity rotating_child_back2"></i></a><br>
+      <a href="#"><i class="fa fa-facebook-official rotating_child2"></i></a><br>
+      <a href="#"><i class="fa fa-instagram rotating_child_back2"></i></a><br>
+      <a href="#"><i class="fa fa-snapchat rotating_child2"></i></a><br>
+      <a href="#"><i class="fa fa-pinterest-p rotating_child_back2"></i></a><br>
+      <a href="#"><i class="fa fa-twitter rotating_child2"></i></a><br>
+      <a href="#"><i class="fa fa-linkedin rotating_child_back2"></i></a><br>
     </div>
     <div class="w3-display-bottomleft w3-xlarge w3-hide-large" style="padding:24px 48px">
-      <a href="#"><i class="fa fa-facebook-official w3-hover-opacity rotating_child2"></i></a>
-      <a href="#"><i class="fa fa-instagram w3-hover-opacity rotating_child_back2"></i></a>
-      <a href="#"><i class="fa fa-snapchat w3-hover-opacity rotating_child2"></i></a>
-      <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity rotating_child_back2"></i></a>
-      <a href="#"><i class="fa fa-twitter w3-hover-opacity rotating_child2"></i></a>
-      <a href="#"><i class="fa fa-linkedin w3-hover-opacity rotating_child_back2"></i></a>
+      <a href="#"><i class="fa fa-facebook-official rotating_child2"></i></a>
+      <a href="#"><i class="fa fa-instagram rotating_child_back2"></i></a>
+      <a href="#"><i class="fa fa-snapchat rotating_child2"></i></a>
+      <a href="#"><i class="fa fa-pinterest-p rotating_child_back2"></i></a>
+      <a href="#"><i class="fa fa-twitter rotating_child2"></i></a>
+      <a href="#"><i class="fa fa-linkedin rotating_child_back2"></i></a>
     </div>
   </header>
+
+  <div id="scroll_invite" class="w3-bottom w3-animate-opacity"><p class="w3-center">Please scroll <i class="fa fa-arrow-down"></i></p></div>
 
   <!-- About Section -->
   <div class="w3-container more_about" style="padding:128px 16px" id="about">
@@ -326,9 +328,15 @@ function checkScroll() {
   //if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
     document.getElementById("sideMenu").classList.add("w3-show");
     document.getElementById("sideMenu").classList.remove("w3-hide");
+
+    document.getElementById("scroll_invite").classList.add("w3-hide");
+    document.getElementById("scroll_invite").classList.remove("w3-show");
   } else {
     document.getElementById("sideMenu").classList.add("w3-hide");
     document.getElementById("sideMenu").classList.remove("w3-show");
+
+    document.getElementById("scroll_invite").classList.add("w3-show");
+    document.getElementById("scroll_invite").classList.remove("w3-hide");
   }
 }
 
