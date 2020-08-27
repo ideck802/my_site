@@ -8,6 +8,7 @@ body {
 }
 #sideMenu {
   background: #333533;
+  overflow-y: auto;
 }
 
 .bgimg-1 {
@@ -32,10 +33,15 @@ body {
 
 #scroll_invite {
   font-family: 'Audiowide';
-  color: #d6d84f;
+  font-size: 15px;
+  color: #279af1;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #d6d84f;
+  -webkit-text-stroke-color: #279af1;
   -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, transparent, #464746, #464746, #464746);
+}
+#scroll_invite > .small_screen {
+  font-size: 20px;
 }
 
 .more_about {
