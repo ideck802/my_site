@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 <link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -63,9 +64,9 @@ body, html, .tabcontent {
   <!-- Header with full-height image -->
   <header class="bgimg-1 rotating_title w3-display-container" id="home">
     <div class="w3-display-left" style="padding:48px;padding-right:24px;">
-      <div class="w3-xxxlarge w3-hide-small rotating_child">Hello and welcome. I am <span class="myName">Isaac Decker</span>.</div><br>
-      <div class="w3-xxlarge w3-hide-large w3-hide-medium rotating_child">Hello and welcome. I am <span class="myName">Isaac Decker</span>.</div><br>
-      <div class="w3-large w3-hide-small rotating_child_back">I like to make websites, code and I enjoy
+      <div class="w3-xxxlarge w3-hide-small orange_box">Hello and welcome. I am <span class="myName">Isaac Decker</span>.</div><br>
+      <div class="w3-xxlarge w3-hide-large w3-hide-medium orange_box">Hello and welcome. I am <span class="myName">Isaac Decker</span>.</div><br>
+      <div class="w3-large w3-hide-small orange_box">I like to make websites, code and I enjoy
         <div class="antiClock">
           <span>Thing.</span>
           <span>3d printing</span>
@@ -102,9 +103,13 @@ body, html, .tabcontent {
     </div>
   </header>
 
-  <div id="scroll_invite" class="w3-bottom w3-animate-opacity">
-    <p class="w3-center w3-hide-small">Scroll f<i class="fas fa-arrow-circle-down"></i>r more</p>
-    <p class="w3-right small_screen w3-hide-large w3-hide-medium" style="padding-right:10px;">Scroll for more <i class="fas fa-arrow-down"></i></p>
+  <div id="scroll_invite">
+    <div class="scroll_invite w3-center w3-hide-small w3-bottom w3-animate-opacity">
+      <p>Scroll f<i class="fas fa-arrow-circle-down"></i>r more</p>
+    </div>
+    <div class="scroll_invite_small w3-right small_screen w3-hide-large w3-hide-medium w3-bottom w3-animate-opacity" style="padding-right:10px;">
+      <p class="w3-right">Scroll for more <i class="fas fa-arrow-down"></i></p>
+    </div>
   </div>
 
   <!-- About Section -->
@@ -115,19 +120,29 @@ body, html, .tabcontent {
 
   <!-- Promo Section "Statistics" -->
   <div class="projects-container w3-container w3-row w3-center w3-padding-64">
-    <div class="rotating_obj">
+    <div class="orange_box">
       <h3>Websites</h3>
-      <div class="w3-container project-links-container">
-        <a href="#test" class="project-link text-sideways w3-center"><span>Site1</span></a>
-        <a href="#test" class="project-link text-sideways w3-center"><span>Site2</span></a>
-        <a href="#test" class="project-link text-sideways w3-center"><span>Site3</span></a>
-        <a href="#test" class="project-link text-sideways w3-center"><span>Site4</span></a>
-        <a href="#test" class="project-link text-sideways w3-center"><span>Site5</span></a>
-        <a href="#test" class="project-link text-sideways w3-center"><span>Site6</span></a>
-        <a href="#test" class="project-link text-sideways w3-center"><span>Site7</span></a>
-        <a href="#test" class="project-link text-sideways w3-center"><span>Site8</span></a>
-        <a href="#test" class="project-link text-sideways w3-center"><span>Site9</span></a>
-        <a href="#test" class="project-link text-sideways w3-center"><span>Site10</span></a>
+      <div class="w3-container project-links-container" data-flickity='{ "groupCells": true, "wrapAround": true }'>
+        <div class="carousel-cell w3-hide-small"><a href="#test" class="project-link text-sideways w3-center"><span>Site1</span></a></div>
+        <div class="carousel-cell w3-hide-small"><a href="#test" class="project-link text-sideways w3-center"><span>Site2</span></a></div>
+        <div class="carousel-cell w3-hide-small"><a href="#test" class="project-link text-sideways w3-center"><span>Site3</span></a></div>
+        <div class="carousel-cell w3-hide-small"><a href="#test" class="project-link text-sideways w3-center"><span>Site4</span></a></div>
+        <div class="carousel-cell w3-hide-small"><a href="#test" class="project-link text-sideways w3-center"><span>Site5</span></a></div>
+        <div class="carousel-cell w3-hide-small"><a href="#test" class="project-link text-sideways w3-center"><span>Site6</span></a></div>
+        <div class="carousel-cell w3-hide-small"><a href="#test" class="project-link text-sideways w3-center"><span>Site7</span></a></div>
+        <div class="carousel-cell w3-hide-small"><a href="#test" class="project-link text-sideways w3-center"><span>Site8</span></a></div>
+        <div class="carousel-cell w3-hide-small"><a href="#test" class="project-link text-sideways w3-center"><span>Site9</span></a></div>
+        <div class="carousel-cell w3-hide-small"><a href="#test" class="project-link text-sideways w3-center"><span>Site10</span></a></div>
+        <div class="carousel-cell2 w3-hide-large w3-hide-medium"><a href="#test" class="project-link text-sideways w3-center"><span>Site1</span></a></div>
+        <div class="carousel-cell2 w3-hide-large w3-hide-medium"><a href="#test" class="project-link text-sideways w3-center"><span>Site2</span></a></div>
+        <div class="carousel-cell2 w3-hide-large w3-hide-medium"><a href="#test" class="project-link text-sideways w3-center"><span>Site3</span></a></div>
+        <div class="carousel-cell2 w3-hide-large w3-hide-medium"><a href="#test" class="project-link text-sideways w3-center"><span>Site4</span></a></div>
+        <div class="carousel-cell2 w3-hide-large w3-hide-medium"><a href="#test" class="project-link text-sideways w3-center"><span>Site5</span></a></div>
+        <div class="carousel-cell2 w3-hide-large w3-hide-medium"><a href="#test" class="project-link text-sideways w3-center"><span>Site6</span></a></div>
+        <div class="carousel-cell2 w3-hide-large w3-hide-medium"><a href="#test" class="project-link text-sideways w3-center"><span>Site7</span></a></div>
+        <div class="carousel-cell2 w3-hide-large w3-hide-medium"><a href="#test" class="project-link text-sideways w3-center"><span>Site8</span></a></div>
+        <div class="carousel-cell2 w3-hide-large w3-hide-medium"><a href="#test" class="project-link text-sideways w3-center"><span>Site9</span></a></div>
+        <div class="carousel-cell2 w3-hide-large w3-hide-medium"><a href="#test" class="project-link text-sideways w3-center"><span>Site10</span></a></div>
       </div>
     </div>
   </div>
@@ -264,6 +279,7 @@ body, html, .tabcontent {
 
 <script src="scripts/rotating_forward.js"></script>
 <script src="scripts/rotating_backward.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script>
 jQuery(function ($) {
     $.fn.hScroll = function (amount) {

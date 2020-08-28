@@ -12,7 +12,7 @@ body {
 }
 
 .bgimg-1 {
-  background: linear-gradient(90deg, transparent, #b618b7, #f26419, #f26419);
+  background: linear-gradient(90deg, transparent, transparent, #279af1, transparent, transparent);
   /*background-position: center;
   background-size: cover;
   background-image: url("../images/mac.jpg");*/
@@ -30,23 +30,35 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.orange_box {
+  background: #f26419;
+  box-shadow: 0 0 15px 15px #f26419;
+}
 
-#scroll_invite {
+.scroll_invite {
   font-family: 'Audiowide';
   font-size: 15px;
   color: #279af1;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #279af1;
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(90deg, transparent, #464746, #464746, #464746);
+  background: #464746;
+  box-shadow: 0 0 10px 10px #464746;
+  margin-left: -10%;
 }
-#scroll_invite > .small_screen {
+.scroll_invite_small {
+  font-family: 'Audiowide';
   font-size: 20px;
+  color: #279af1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #279af1;
+  -webkit-text-fill-color: transparent;
+  background: #464746;
+  box-shadow: 0 0 10px 10px #464746;
 }
 
 .more_about {
-  background: linear-gradient(90deg, #b618b7, #b618b7, #f26419, #f26419);
-  box-shadow: 0 0 60px 60px #b618b7;
+  background: linear-gradient(90deg, transparent, transparent, #f26419, #f26419, #f26419, #f26419);
 }
 
 
@@ -201,27 +213,34 @@ body {
 }
 
 .projects-container {
-  background: #333533;
+  background: linear-gradient(90deg, transparent, transparent, #279af1, transparent, transparent);
 }
 .project-links-container {
-  border: 1px solid black;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  /*background: linear-gradient(90deg, transparent, transparent, #279af1, transparent, transparent);*/
 }
 .project-links-container::-webkit-scrollbar {
   display: none;  /*Chrome, Safari and Opera */
 }
+.carousel-cell {
+  width: 33%;
+}
+.carousel-cell2 {
+  width: 50%;
+}
 .project-link {
   display: inline-block;
-  width: 100px;
+  width: 100%;
   height: 200px;
   padding: 50px;
   border: 1px solid black;
   text-decoration: none;
+  background: green;
 }
 .project-link:hover {
   padding-left: 70px;
