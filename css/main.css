@@ -45,7 +45,8 @@ body {
 }
 
 .more_about {
-  background: linear-gradient(90deg, transparent, #464746, #464746, #464746);
+  background: linear-gradient(90deg, #b618b7, #b618b7, #f26419, #f26419);
+  box-shadow: 0 0 60px 60px #b618b7;
 }
 
 
@@ -200,7 +201,7 @@ body {
 }
 
 .projects-container {
-  background: linear-gradient(90deg, transparent, #333533, #333533, #333533);
+  background: #333533;
 }
 .project-links-container {
   border: 1px solid black;
