@@ -192,13 +192,21 @@ body {
   border-radius: 15px;
   margin-top: 20px;
   width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mobile-menu-close:hover {
+  background: #333533 !important;
+  -webkit-text-stroke-color: #028090;
+  box-shadow: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .mobile-menu-container {
     width: 100%;
 }
 .mobile-menu-button {
   background: #028090 !important;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Audiowide';
   font-weight: bold;
   color: #e5e5e5;
@@ -207,15 +215,18 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #e5e5e5;
-  width: 100%;
-  padding: 20px;
+  width: 80%;
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .mobile-menu-button:hover {
-  background: #028090 !important;
-  -webkit-text-stroke-color: #e5e5e5;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #333533 !important;
+  -webkit-text-stroke-color: #028090;
+  box-shadow: none;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
