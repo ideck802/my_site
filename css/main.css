@@ -132,7 +132,7 @@ body {
   padding: 20px;
 }
 .tablinks {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Audiowide';
   font-weight: bold;
   text-decoration: none;
@@ -141,6 +141,7 @@ body {
   -webkit-text-stroke-color: #028090;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 10px;
 }
 .tablinks:hover {
   background: #028090 !important;
@@ -151,7 +152,7 @@ body {
   box-decoration-break: clone;
 }
 .tablinks2 {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Audiowide';
   font-weight: bold;
   text-decoration: none;
