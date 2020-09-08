@@ -49,7 +49,7 @@ body {
   -o-box-decoration-break: clone;
   box-decoration-break: clone;
 }
-.gray_box2 {
+.blue_box {
   background: #028090;
   margin: 10px;
   padding: 15px;
@@ -315,15 +315,7 @@ body {
   background: #242423;
 }
 .project-links-container {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-.project-links-container::-webkit-scrollbar {
-  display: none;  /*Chrome, Safari and Opera */
+  overflow: visible;
 }
 .carousel-cell {
   width: 33%;
@@ -332,22 +324,34 @@ body {
   width: 100%;
 }
 .project-link {
+  position: relative;
   display: inline-block;
-  width: 100%;
+  width: 90%;
   height: 200px;
   padding: 50px;
-  border: 1px solid black;
   text-decoration: none;
-  background: green;
+  overflow: hidden;
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project-link::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background-image: url('../images/mac.jpg');
+  background-position: center;
+  background-size: cover;
+  transform: rotate(180deg);
 }
 .project-link:hover {
   padding-left: 70px;
 }
 .project-link span {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+  background: #333533;
+  height: 100%;
 }
 
 
