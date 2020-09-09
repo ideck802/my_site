@@ -314,21 +314,58 @@ body {
 .projects-container {
   background: #242423;
 }
+.projects-container-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Audiowide';
+  font-weight: bold;
+  color: #e5e5e5;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e5e5e5;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid #e5e5e5;
+}
 .project-links-container {
+  padding-left: 0px;
+  padding-right: 0px;
   overflow: visible;
 }
 .carousel-cell {
   width: 33%;
+  padding: 8px;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition:         transform .2s ease-in-out;
 }
 .carousel-cell2 {
+  width: 50%;
+  padding: 8px;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition:         transform .2s ease-in-out;
+}
+.carousel-cell3 {
   width: 100%;
+  padding: 8px;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition:         transform .2s ease-in-out;
+}
+.carousel-cell:hover {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+.carousel-cell2:hover {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+.carousel-cell3:hover {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
 .project-link {
   position: relative;
   display: inline-block;
   width: 90%;
   height: 200px;
-  padding: 50px;
+  padding: 0px;
   text-decoration: none;
   overflow: hidden;
   box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -341,7 +378,6 @@ body {
   top: -50%;
   left: -50%;
   z-index: -1;
-  background-image: url('../images/mac.jpg');
   background-position: center;
   background-size: cover;
   transform: rotate(180deg);
@@ -349,9 +385,26 @@ body {
 .project-link:hover {
   padding-left: 70px;
 }
-.project-link span {
-  background: #333533;
-  height: 100%;
+.project-link div {
+  background: #028090;
+  height: 200px;
+  padding: 10px;
+  font-family: 'Audiowide';
+  color: #e5e5e5;
+}
+.flickity-button {
+  background: #242423 !important;
+}
+.flickity-prev-next-button {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+  width: 35px !important;
+  height: 100px !important;
+  border-radius: 5px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flickity-button-icon {
+  fill: #028090 !important;
 }
 
 
