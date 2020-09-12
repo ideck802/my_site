@@ -49,6 +49,15 @@ body {
   -o-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+.gray_box2 {
+  background: #242423;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
 .blue_box {
   background: #028090;
   margin: 10px;
@@ -391,6 +400,7 @@ body {
   padding: 10px;
   font-family: 'Audiowide';
   color: #e5e5e5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .flickity-button {
   background: #242423 !important;
@@ -405,6 +415,50 @@ body {
 }
 .flickity-button-icon {
   fill: #028090 !important;
+}
+
+footer {
+  background: #333533;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 20px;
+  color: #028090;
+}
+footer i {
+  background: transparent;
+  color: #e5e5e5;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer i:hover {
+  color: #333533;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+footer > a {
+  font-family: 'Audiowide';
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  color: #e5e5e5;
+}
+footer > a:hover {
+  color: #028090;
+}
+footer p {
+  font-family: 'Audiowide';
+  font-weight: bold;
+  color: #e5e5e5;
+}
+footer > p > a {
+  color: #e5e5e5;
+  margin: 0px !important;
+  padding: 10px !important;
+}
+footer > p > a:hover {
+  color: #333533;
 }
 
 
