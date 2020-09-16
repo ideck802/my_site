@@ -98,6 +98,24 @@ body {
 .more_about {
   background: #242423;
 }
+.more_about > a {
+  display: inline-block;
+  font-family: 'Audiowide';
+  font-weight: bold;
+  color: #e5e5e5;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #e5e5e5;
+  text-decoration: none;
+  width: auto;
+}
+.more_about > a:hover {
+  background: #333533;
+  color: #028090;
+  -webkit-text-stroke-color: #028090;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
 
 
 .tab {
@@ -141,24 +159,30 @@ body {
   padding: 20px;
 }
 .tablinks {
+  background: #028090 !important;
   font-size: 25px;
   font-family: 'Audiowide';
   font-weight: bold;
   text-decoration: none;
   color: #e5e5e5;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #028090;
+  -webkit-text-stroke-color: #e5e5e5;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 10px;
-}
-.tablinks:hover {
-  background: #028090 !important;
-  -webkit-text-stroke-color: #e5e5e5;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+.tablinks:hover {
+  background: #242423 !important;
+  -webkit-text-stroke-color: #028090;
+  color: #028090;
+  -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
 }
 .tablinks2 {
   font-size: 25px;
@@ -171,13 +195,23 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.tablinks2:hover .sidebar-text {
+.tablinks2 .sidebar-text {
+  margin-bottom: 20px;
   background: #028090 !important;
   -webkit-text-stroke-color: #e5e5e5;
   border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+.tablinks2:hover .sidebar-text {
+  background: #242423 !important;
+  -webkit-text-stroke-color: #028090;
+  color: #028090;
+  -webkit-transform: rotate(-176deg);
+    transform: rotate(-176deg);
 }
 
 .mobile-menu {
@@ -205,11 +239,9 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .mobile-menu-close:hover {
-  background: #333533 !important;
+  background: #242423 !important;
   -webkit-text-stroke-color: #028090;
-  box-shadow: none;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  color: #028090;
 }
 .mobile-menu-container {
     width: 100%;
@@ -232,13 +264,15 @@ body {
   margin-top: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 .mobile-menu-button:hover {
-  background: #333533 !important;
+  background: #242423 !important;
   -webkit-text-stroke-color: #028090;
-  box-shadow: none;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  color: #028090;
+  -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
 }
 
 
@@ -320,6 +354,16 @@ body {
           transform: rotate(0deg);
 }
 
+.projects_header {
+  font-family: 'Audiowide';
+  font-weight: bold;
+  font-size: 40px;
+  color: #028090;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #028090;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid #028090;
+}
 .projects-container {
   background: #242423;
 }
@@ -402,6 +446,10 @@ body {
   color: #e5e5e5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.project-link:hover div {
+  background: #242423;
+  color: #028090;
+}
 .flickity-button {
   background: #242423 !important;
 }
@@ -436,16 +484,6 @@ footer i:hover {
   color: #333533;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
-}
-footer > a {
-  font-family: 'Audiowide';
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
-  color: #e5e5e5;
-}
-footer > a:hover {
-  color: #028090;
 }
 footer p {
   font-family: 'Audiowide';
