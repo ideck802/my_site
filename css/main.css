@@ -119,10 +119,41 @@ body {
 
 .about_me {
   background: #242423;
-  font-family: 'Audiowide';
+  font-family: 'Open Sans';
   color: #e5e5e5;
+  padding: 10% 10%;
+  padding-bottom: 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.my_skills {
+  background: #242423;
+  font-family: 'Open Sans';
+  color: #e5e5e5;
+  padding: 5% 10%;
   border-radius: 0 0 15px 15px;
+}
+.my_skills > p {
+  font-family: 'Audiowide';
+}
+.ul1 {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-position: inside;
+  list-style-type: none;
+}
+.ul1 > li:before {
+  content: "- ";
+}
+.ul2 {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  list-style-position: inside;
+  list-style-type: none;
+}
+.ul2 > li:before {
+  content: "- ";
 }
 
 
