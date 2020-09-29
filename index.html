@@ -154,7 +154,7 @@ body, html, .tabcontent {
     <div class="w3-xlarge blue_box">
       <a href="#"><i class="fab fa-facebook-square"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-pinterest"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
       <a href="#"><i class="fab fa-twitter-square"></i></a>
       <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
@@ -200,7 +200,7 @@ more every day in other languages such as React and Python.</p>
     <div class="w3-xlarge blue_box">
       <a href="#"><i class="fab fa-facebook-square"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-pinterest"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
       <a href="#"><i class="fab fa-twitter-square"></i></a>
       <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
@@ -208,9 +208,47 @@ more every day in other languages such as React and Python.</p>
   </footer>
 </div>
 
-<div id="_contact" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<div id="_contact" class="tabcontent rotating_title3">
+  <div class="w3-container projects_header" style="padding:64px 16px;padding-bottom:0px;">
+    <p class="w3-center">GET IN TOUCH</p>
+  </div>
+
+  <div class="w3-container contact_me w3-large">
+    <form action="https://formspree.io/ideck802@gmail.com" method="POST">
+      <p class="w3-hide-small" style="display:flex;">
+        <input class="w3-input" style="margin-right:20px;" type="text" placeholder="Name" required name="name">
+        <input class="w3-input" type="email" placeholder="Email" required name="email">
+      </p>
+      <p class="w3-hide-medium w3-hide-large"><input class="w3-input" type="text" placeholder="Name" required name="name"></p>
+      <p class="w3-hide-medium w3-hide-large"><input class="w3-input" type="email" placeholder="Email" required name="email"></p>
+
+      <textarea class="w3-input" type="text" placeholder="Message" required name="message" rows="4"></textarea><br>
+      <button class="blue_box rotating_child_back" type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+    </form>
+  </div>
+
+  <div class="w3-container more_contact w3-large">
+    <div class="gray_box w3-center w3-xxxlarge">
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <span class="w3-hide-small">|</span>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+      <span class="w3-hide-small">|</span>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <p class="w3-large">myemail@my.website</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center">
+    <div class="w3-xlarge blue_box">
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>This site was made by <a href="#projects" onclick="changeTab(event, '_projects')" class="blue_box">Isaac</a></p>
+  </footer>
 </div>
 
 

@@ -1,6 +1,5 @@
 //for clockwise
 const rotators = document.querySelectorAll('.rotating_obj');
-
 var observer = new IntersectionObserver(function(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting === true) {
@@ -10,13 +9,11 @@ var observer = new IntersectionObserver(function(entries) {
     }
   });
 }, { threshold: [0.7] });
-
 rotators.forEach(rotator => {
   observer.observe(rotator);
 });
 
 const rotators2 = document.querySelectorAll('.rotating_title2');
-
 var observer2 = new IntersectionObserver(function(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting === true) {
@@ -26,9 +23,22 @@ var observer2 = new IntersectionObserver(function(entries) {
     }
   });
 }, { threshold: [1] });
-
 rotators2.forEach(rotator => {
   observer2.observe(rotator);
+});
+
+const rotators4 = document.querySelectorAll('.rotating_title3');
+var observer4 = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting === true) {
+      entry.target.classList.add('rotate-forward_title');
+    } else {
+      entry.target.classList.remove('rotate-forward_title');
+    }
+  });
+}, { threshold: [0.3] });
+rotators4.forEach(rotator => {
+  observer4.observe(rotator);
 });
 
 const rotators3 = document.querySelectorAll('.rotating_title');
