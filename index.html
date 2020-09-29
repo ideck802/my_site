@@ -19,7 +19,7 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-body, html, .tabcontent {
+body, html, .main_content {
   height: 100%;
   line-height: 1.8;
 }
@@ -34,21 +34,21 @@ body, html, .tabcontent {
 <nav class="mobile-menu w3-display-container w3-animate-top w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <button class=" mobile-menu-close w3-button w3-display-topmiddle" onclick="w3_close()">X</button>
   <div class="mobile-menu-container w3-display-middle">
-    <a href="#projects" class="mobile-menu-button w3-button" onclick="changeTab(event, '_projects'); w3_close()" id="defaultOpen"><p class="w3-center">Projects</p></a>
-    <a href="#about" class="mobile-menu-button w3-button" onclick="changeTab(event, '_about'); w3_close()"><p class="w3-center">About</p></a>
-    <a href="#contact" class="mobile-menu-button w3-button" onclick="changeTab(event, '_contact'); w3_close()"><p class="w3-center">Contact</p></a>
+    <a href="index.html" class="mobile-menu-button w3-button"><p class="w3-center">Projects</p></a>
+    <a href="about.html" class="mobile-menu-button w3-button"><p class="w3-center">About</p></a>
+    <a href="contact.html" class="mobile-menu-button w3-button"><p class="w3-center">Contact</p></a>
   </div>
 </nav>
 
 <!-- Navbar (sit on top) -->
 <div>
   <div class="w3-bar w3-card mainNavbar">
-    <a href="#projects" class="tablinks w3-bar-item w3-wide" onclick="changeTab(event, '_projects')">ISAAC</a>
+    <a href="index.html" class="tablinks w3-bar-item w3-wide">ISAAC</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#projects" class="tablinks w3-bar-item" onclick="changeTab(event, '_projects')">Projects</a>
-      <a href="#about" class="tablinks w3-bar-item" onclick="changeTab(event, '_about')">About</a>
-      <a href="#contact" class="tablinks w3-bar-item" onclick="changeTab(event, '_contact')">Contact</a>
+      <a href="index.html" class="tablinks w3-bar-item">Projects</a>
+      <a href="about.html" class="tablinks w3-bar-item">About</a>
+      <a href="contact.html" class="tablinks w3-bar-item">Contact</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -59,12 +59,12 @@ body, html, .tabcontent {
 </div>
 
 <div id="sideMenu" class="tab w3-hide w3-animate-left w3-hide-small" data-simplebar>
-  <a href="#projects" class="tablinks2" onclick="changeTab(event, '_projects')" id="defaultOpen"><p class="text-sideways sidebar-text">Projects</p></a>
-  <a href="#about" class="tablinks2" onclick="changeTab(event, '_about')"><p class="text-sideways sidebar-text">About</p></a>
-  <a href="#contact" class="tablinks2" onclick="changeTab(event, '_contact')"><p class="text-sideways sidebar-text">Contact</p></a>
+  <a href="index.html" class="tablinks2"><p class="text-sideways sidebar-text">Projects</p></a>
+  <a href="about.html" class="tablinks2"><p class="text-sideways sidebar-text">About</p></a>
+  <a href="contact.html" class="tablinks2"><p class="text-sideways sidebar-text">Contact</p></a>
 </div>
 
-<div id="_projects" class="tabcontent">
+<div class="main_content">
   <!-- Header with full-height image -->
   <header class="bgimg-1 rotating_title w3-display-container" id="home">
     <div class="bgimg w3-grayscale" data-slides='["images/mac.jpg","images/mac2.jpg"]'></div>
@@ -146,7 +146,7 @@ body, html, .tabcontent {
 
   <!-- About Section -->
   <div class="w3-container more_about w3-center rotating_title2" style="padding:64px 16px">
-    <a href="#about" class="blue_box w3-xlarge rotating_child_back" onclick="changeTab(event, '_about')">Learn More About Me <i class="fas fa-arrow-right"></i></a>
+    <a href="about.html" class="blue_box w3-xlarge rotating_child_back">Learn More About Me <i class="fas fa-arrow-right"></i></a>
   </div>
 
   <!-- Footer -->
@@ -158,96 +158,7 @@ body, html, .tabcontent {
       <a href="#"><i class="fab fa-twitter-square"></i></a>
       <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
-    <p>This site was made by <a href="#projects" onclick="changeTab(event, '_projects')" class="blue_box">Isaac</a></p>
-  </footer>
-</div>
-
-<div id="_about" class="tabcontent">
-  <div class="w3-container projects_header" style="padding:64px 16px;padding-bottom:0px;">
-    <p class="w3-center">ABOUT ME</p>
-  </div>
-
-  <!-- About Section -->
-  <div class="w3-container about_me w3-large">
-    <p class="gray_box" style="text-indent: 45px;">Hello! I'm Isaac Decker, a web developer based in the U.S. I've liked coding
-since I discovered HTML in 2012 and I continue to enjoy building responsive and
-functional websites. I am experienced in HTML, CSS and JavaScript and I am learning
-more every day in other languages such as React and Python.</p>
-  <p class="gray_box" style="text-indent: 45px;">Outside of designing websites, you can find me adding to my voice assistant,
-3d printing various parts, or building and programming new robots.</p>
-  </div>
-
-  <div class="w3-container my_skills w3-large">
-    <p class="gray_box w3-center w3-xlarge">Skills</p>
-    <ul class="gray_box ul1 w3-hide-medium w3-hide-large">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>jQuery</li>
-      <li>Python</li>
-    </ul>
-    <ul class="gray_box ul2 w3-hide-small">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>jQuery</li>
-      <li>Python</li>
-    </ul>
-  </div>
-
-  <!-- Footer -->
-  <footer class="w3-center">
-    <div class="w3-xlarge blue_box">
-      <a href="#"><i class="fab fa-facebook-square"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-twitter-square"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <p>This site was made by <a href="#projects" onclick="changeTab(event, '_projects')" class="blue_box">Isaac</a></p>
-  </footer>
-</div>
-
-<div id="_contact" class="tabcontent rotating_title3">
-  <div class="w3-container projects_header" style="padding:64px 16px;padding-bottom:0px;">
-    <p class="w3-center">GET IN TOUCH</p>
-  </div>
-
-  <div class="w3-container contact_me w3-large">
-    <form action="https://formspree.io/ideck802@gmail.com" method="POST">
-      <p class="w3-hide-small" style="display:flex;">
-        <input class="w3-input" style="margin-right:20px;" type="text" placeholder="Name" required name="name">
-        <input class="w3-input" type="email" placeholder="Email" required name="email">
-      </p>
-      <p class="w3-hide-medium w3-hide-large"><input class="w3-input" type="text" placeholder="Name" required name="name"></p>
-      <p class="w3-hide-medium w3-hide-large"><input class="w3-input" type="email" placeholder="Email" required name="email"></p>
-
-      <textarea class="w3-input" type="text" placeholder="Message" required name="message" rows="4"></textarea><br>
-      <button class="blue_box rotating_child_back" type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
-    </form>
-  </div>
-
-  <div class="w3-container more_contact w3-large">
-    <div class="gray_box w3-center w3-xxxlarge">
-      <a href="#"><i class="fab fa-facebook-square"></i></a>
-      <span class="w3-hide-small">|</span>
-      <a href="#"><i class="fas fa-envelope"></i></a>
-      <span class="w3-hide-small">|</span>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <p class="w3-large">myemail@my.website</p>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="w3-center">
-    <div class="w3-xlarge blue_box">
-      <a href="#"><i class="fab fa-facebook-square"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-twitter-square"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <p>This site was made by <a href="#projects" onclick="changeTab(event, '_projects')" class="blue_box">Isaac</a></p>
+    <p>This site was made by <a href="index.html" class="blue_box">Isaac</a></p>
   </footer>
 </div>
 
@@ -284,22 +195,6 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 
-function changeTab(evt, tabID) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabID).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpen").click();
-
-
 window.onscroll = function() {checkScroll()};
 function checkScroll() {
   if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
@@ -317,19 +212,6 @@ function checkScroll() {
     document.getElementById("scroll_invite").classList.remove("w3-hide");
   }
 }
-
-
-myurl = window.location.href.split(/[#]+/).pop();
-function preOpen () {
-  if (myurl == "projects") {
-    changeTab(event, '_projects');
-  } else if (myurl == "about" ) {
-    changeTab(event, '_about');
-  } else if (myurl == "contact") {
-    changeTab(event, '_contact');
-  }
-};
-preOpen();
 </script>
 
 </body>
