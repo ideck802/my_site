@@ -34,7 +34,8 @@ body {
   height: 100%;
   background-position: center;
   background-size: cover;
-  background-image: url("../images/mac.jpg");
+  background-image: url("../images/mac2.jpg");
+  filter: grayscale(75%) blur(2px);
 }
 .bgimg-1 span {
   -webkit-text-stroke-width: 2px;
@@ -548,22 +549,17 @@ body {
   overflow: hidden;
   box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.project-link::before {
-  content: "";
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
+.websites {
+  width: 100%;
+  height: 100%;
   z-index: -1;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   transform: rotate(180deg);
+  background-repeat: no-repeat;
+  margin-left: -63px;
 }
-.project-link:hover {
-  padding-left: 70px;
-}
-.project-link div {
+.project-link .text {
   background: #028090;
   height: 200px;
   padding: 10px;
@@ -571,7 +567,7 @@ body {
   color: #e5e5e5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.project-link:hover div {
+.project-link:hover .text {
   background: #242423;
   color: #028090;
 }
