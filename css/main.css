@@ -557,7 +557,6 @@ body {
   background-size: cover;
   transform: rotate(180deg);
   background-repeat: no-repeat;
-  margin-left: -63px;
 }
 .project-link .text {
   background: #028090;
