@@ -2,7 +2,10 @@
   background-image: url('../images/construction-site-link.jpg');
 }
 .websites-2 {
-  background-image: url('../images/mac2.jpg');
+  background-image: url('../images/keyboard ad.png');
+  background-position: right top;
+  background-size: cover;
+  width: 75%;
 }
 .websites-3 {
   background-image: url('../images/construction-site-link.jpg');
