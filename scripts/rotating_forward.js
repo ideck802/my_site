@@ -3,9 +3,9 @@ const rotators = document.querySelectorAll('.rotating_obj');
 var observer = new IntersectionObserver(function(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting === true) {
-      entry.target.classList.add('rotate-forward');
+      entry.target.classList.add('rotate_forward');
     } else {
-      entry.target.classList.remove('rotate-forward');
+      entry.target.classList.remove('rotate_forward');
     }
   });
 }, { threshold: [0.7] });
@@ -17,9 +17,9 @@ const rotators2 = document.querySelectorAll('.rotating_title2');
 var observer2 = new IntersectionObserver(function(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting === true) {
-      entry.target.classList.add('rotate-forward_title');
+      entry.target.classList.add('rotate_forward_title');
     } else {
-      entry.target.classList.remove('rotate-forward_title');
+      entry.target.classList.remove('rotate_forward_title');
     }
   });
 }, { threshold: [1] });
@@ -31,9 +31,9 @@ const rotators4 = document.querySelectorAll('.rotating_title3');
 var observer4 = new IntersectionObserver(function(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting === true) {
-      entry.target.classList.add('rotate-forward_title');
+      entry.target.classList.add('rotate_forward_title');
     } else {
-      entry.target.classList.remove('rotate-forward_title');
+      entry.target.classList.remove('rotate_forward_title');
     }
   });
 }, { threshold: [0.3] });
@@ -46,9 +46,9 @@ const rotators3 = document.querySelectorAll('.rotating_title');
 var observer3 = new IntersectionObserver(function(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting === true) {
-      entry.target.classList.add('rotate-forward_title');
+      entry.target.classList.add('rotate_forward_title');
     } else {
-      entry.target.classList.remove('rotate-forward_title');
+      entry.target.classList.remove('rotate_forward_title');
     }
   });
 }, { threshold: [0.8], rootMargin: ['-80px 1px 1px 1px'] });

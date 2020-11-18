@@ -1,0 +1,100 @@
+/* CONTACT PAGE */
+/* header */
+.contact_me_header {
+  font-family: 'Audiowide';
+  font-weight: bold;
+  font-size: 40px;
+  color: #028090;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #028090;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid #028090;
+}
+/* messaging form */
+.contact_me {
+  background: #242423;
+  font-family: 'Open Sans';
+  color: #e5e5e5;
+  padding: 10% 10%;
+  padding-bottom: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contact_me input {
+  background: #333533;
+  color: #e5e5e5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+  border-bottom: 0px;
+  outline: none;
+}
+.contact_me textarea {
+  background: #333533;
+  color: #e5e5e5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+  border-bottom: 0px;
+  outline: none;
+}
+.contact_me input:focus {
+  background: #028090;
+}
+.contact_me textarea:focus {
+  background: #028090;
+}
+.contact_me button {
+  font-family: 'Audiowide';
+  font-weight: bold;
+  color: #e5e5e5;
+  width: auto;
+  border: 0px;
+}
+.contact_me button:hover {
+  background: #333533;
+  color: #028090;
+  -webkit-text-stroke-color: #028090;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+::-webkit-input-placeholder { /* Edge */
+  color: #028090;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #028090;
+}
+::placeholder {
+  color: #028090;
+}
+
+/* social media links */
+.more_contact {
+  background: #242423;
+  font-family: 'Open Sans';
+  color: #028090;
+  padding: 5% 10%;
+  border-radius: 0 0 15px 15px;
+}
+.more_contact i {
+  background: transparent;
+  color: #028090;
+  border-radius: 100%;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.39);
+}
+.more_contact i:hover {
+  color: #e5e5e5;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+.more_contact span {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: default;
+}

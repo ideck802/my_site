@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <title>Isaac Decker</title>
@@ -13,66 +12,58 @@
 <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 <link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/index.css">
 <link rel="stylesheet" href="./css/list-image-control.css">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html, .main_content {
-  height: 100%;
-  line-height: 1.8;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-</style>
 <body>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="mobile-menu w3-display-container w3-animate-top w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <button class=" mobile-menu-close w3-button w3-display-topmiddle" onclick="w3_close()">X</button>
-  <div class="mobile-menu-container w3-display-middle">
-    <a href="index.html" class="mobile-menu-button w3-button"><p class="w3-center">Projects</p></a>
-    <a href="about.html" class="mobile-menu-button w3-button"><p class="w3-center">About</p></a>
-    <a href="contact.html" class="mobile-menu-button w3-button"><p class="w3-center">Contact</p></a>
+<nav class="mobile_menu w3-display-container w3-animate-top w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <button class="mobile_menu_close w3-button w3-display-topmiddle" onclick="w3_close()">X</button>
+  <div class="mobile_menu_container w3-display-middle">
+    <a href="index.html" class="mobile_menu_link w3-button"><p class="w3-center">Projects</p></a>
+    <a href="about.html" class="mobile_menu_link w3-button"><p class="w3-center">About</p></a>
+    <a href="contact.html" class="mobile_menu_link w3-button"><p class="w3-center">Contact</p></a>
   </div>
 </nav>
 
-<!-- Navbar (sit on top) -->
+<!-- TOP MENU BAR -->
 <div>
-  <div class="w3-bar w3-card mainNavbar">
-    <a href="index.html" class="tablinks w3-bar-item w3-wide">ISAAC</a>
-    <!-- Right-sided navbar links -->
+  <div class="w3-bar w3-card topMenu">
+    <a href="index.html" class="menu_link w3-bar-item w3-wide">ISAAC</a>
+    <!-- right-sided menu links -->
     <div class="w3-right w3-hide-small">
-      <a href="index.html" class="tablinks w3-bar-item">Projects</a>
-      <a href="about.html" class="tablinks w3-bar-item">About</a>
-      <a href="contact.html" class="tablinks w3-bar-item">Contact</a>
+      <a href="index.html" class="menu_link w3-bar-item">Projects</a>
+      <a href="about.html" class="menu_link w3-bar-item">About</a>
+      <a href="contact.html" class="menu_link w3-bar-item">Contact</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="tablinks w3-bar-item w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <!-- menu button that shows on small screens -->
+    <a href="javascript:void(0)" class="menu_link w3-bar-item w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
-<div id="sideMenu" class="tab w3-hide w3-animate-left w3-hide-small" data-simplebar>
-  <a href="index.html" class="tablinks2"><p class="text-sideways sidebar-text">Projects</p></a>
-  <a href="about.html" class="tablinks2"><p class="text-sideways sidebar-text">About</p></a>
-  <a href="contact.html" class="tablinks2"><p class="text-sideways sidebar-text">Contact</p></a>
+<!-- SLIDE-IN SIDE MENU BAR -->
+<div id="sideMenu" class="sideMenu w3-hide w3-animate-left w3-hide-small" data-simplebar>
+  <a href="index.html" class="menu_link2"><p class="text_sideways sidebar_text">Projects</p></a>
+  <a href="about.html" class="menu_link2"><p class="text_sideways sidebar_text">About</p></a>
+  <a href="contact.html" class="menu_link2"><p class="text_sideways sidebar_text">Contact</p></a>
 </div>
 
+<!-- ALL MAIN CONTENT (in div so can move over for menu) -->
 <div class="main_content">
-  <!-- Header with full-height image -->
-  <header class="bgimg-1 rotating_title w3-display-container" id="home">
+  <!-- FULLSCREENISH HEADER -->
+  <header class="rotating_title w3-display-container" id="home">
     <div class="bgimg"></div>
-    <!-- data-slides='["images/construction-site-header.jpg","images/mac2.jpg"]' -->
     <div class="w3-display-middle" style="width:80%;">
+      <!-- title (regular screen) -->
       <div class="w3-jumbo w3-hide-small rotating_child gray_box">Hello! I'm <span class="blue_box">Isaac Decker</span></div><br>
-      <div class="w3-xxlarge w3-hide-large w3-hide-medium rotating_child gray_box">Hello! I'm <span class="blue_box">Isaac Decker</span></div><br>
+      <!-- 'sub'text (regular screen)-->
       <div class="w3-xxlarge w3-hide-small rotating_child gray_box">I like to design websites and I enjoy
+        <!-- spinning and changing text -->
         <div class="antiClock">
           <span class="blue_box">coding</span>
           <span class="blue_box">3d printing</span>
@@ -81,7 +72,11 @@ body, html, .main_content {
           <span class="blue_box">video games</span>
         </div>
       </div>
-      <div class="w3-xlarge w3-hide-large rotating_child w3-hide-medium gray_box">I like to design websites and I enjoy<br>
+      <!-- title (small screen) -->
+      <div class="w3-xxlarge w3-hide-large w3-hide-medium rotating_child gray_box">Hello! I'm <span class="blue_box">Isaac Decker</span></div><br>
+      <!-- 'sub'text (small screen)-->
+      <div class="w3-xlarge w3-hide-large w3-hide-medium rotating_child gray_box">I like to design websites and I enjoy<br>
+        <!-- spinning and changing text -->
         <div class="antiClock">
           <span class="blue_box">coding</span>
           <span class="blue_box">3d printing</span>
@@ -93,65 +88,72 @@ body, html, .main_content {
     </div>
   </header>
 
+  <!-- ARROWS INVITING SCROLLING -->
   <div id="scroll_invite">
     <div class="scroll_invite w3-center w3-hide-small w3-animate-opacity">
       <i class="fas fa-arrow-down"></i>
     </div>
+    <!-- smaller -->
     <div class="scroll_invite_small small_screen w3-hide-large w3-hide-medium w3-animate-opacity">
       <i class="fas fa-arrow-down"></i>
     </div>
   </div>
 
+  <!-- PROJECTS DISPLAY -->
   <div class="w3-container projects_header" style="padding:64px 16px;padding-bottom:0px;">
     <p class="w3-center">MY PROJECTS</p>
   </div>
-
-  <!-- Promo Section "Statistics" -->
-  <div class="projects-container w3-container w3-row w3-center w3-padding-64">
+  <!-- ALL WEBSITES -->
+  <div class="projects_container w3-container w3-row w3-center w3-padding-64">
     <div class="rotating_obj gray_box">
-      <p class="w3-xxlarge projects-container-header">Websites</p>
-      <div class="w3-container project-links-container" data-flickity='{ "groupCells": true, "wrapAround": true, "pageDots": false }'>
-        <div class="carousel-cell w3-hide-medium w3-hide-small"><a href="https://ideck802.github.io/construction-site/" class="project-link blue_box text-sideways w3-center"><div class="text w3-large">Construction Website Demo</div><div class="websites websites-1"></div></a></div>
-        <div class="carousel-cell w3-hide-medium w3-hide-small"><a href="https://ideck802.github.io/fakekeyboardad/" class="project-link blue_box text-sideways w3-center"><div class="text w3-large">Keyboard Product Page</div><div class="websites websites-2"></div></a></div>
-        <div class="carousel-cell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site3</div><div class="websites websites-3"></div></a></div>
-        <div class="carousel-cell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site4</div><div class="websites websites-4"></div></a></div>
-        <!-- <div class="carousel-cell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site5</div><div class="websites websites-5"></div></a></div>
-        <div class="carousel-cell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site6</div><div class="websites websites-6"></div></a></div>
-        <div class="carousel-cell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site7</div><div class="websites websites-7"></div></a></div>
-        <div class="carousel-cell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site8</div><div class="websites websites-8"></div></a></div>
-        <div class="carousel-cell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site9</div><div class="websites websites-9"></div></a></div>
-        <div class="carousel-cell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site10</div><div class="websites websites-10"></div></a></div> -->
-        <div class="carousel-cell2 w3-hide-large w3-hide-small"><a href="https://ideck802.github.io/construction-site/" class="project-link blue_box text-sideways w3-center"><div class="text w3-large">Construction Website Demo</div><div class="websites websites-1"></div></a></div>
-        <div class="carousel-cell2 w3-hide-large w3-hide-small"><a href="https://ideck802.github.io/fakekeyboardad/" class="project-link blue_box text-sideways w3-center"><div class="text w3-large">Keyboard Product Page</div><div class="websites websites-2"></div></a></div>
-        <div class="carousel-cell2 w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site3</div><div class="websites websites-3"></div></a></div>
-        <div class="carousel-cell2 w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site4</div><div class="websites websites-4"></div></a></div>
-        <!-- <div class="carousel-cell2 w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site5</div><div class="websites websites-5"></div></a></div>
-        <div class="carousel-cell2 w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site6</div><div class="websites websites-6"></div></a></div>
-        <div class="carousel-cell2 w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site7</div><div class="websites websites-7"></div></a></div>
-        <div class="carousel-cell2 w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site8</div><div class="websites websites-8"></div></a></div>
-        <div class="carousel-cell2 w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site9</div><div class="websites websites-9"></div></a></div>
-        <div class="carousel-cell2 w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site10</div><div class="websites websites-10"></div></a></div> -->
-        <div class="carousel-cell3 w3-hide-large w3-hide-medium"><a href="https://ideck802.github.io/construction-site/" class="project-link blue_box text-sideways w3-center"><div class="text w3-large">Construction Website Demo</div><div class="websites websites-1"></div></a></div>
-        <div class="carousel-cell3 w3-hide-large w3-hide-medium"><a href="https://ideck802.github.io/fakekeyboardad/" class="project-link blue_box text-sideways w3-center"><div class="text w3-large">Keyboard Product Page</div><div class="websites websites-2"></div></a></div>
-        <div class="carousel-cell3 w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site3</div><div class="websites websites-3"></div></a></div>
-        <div class="carousel-cell3 w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site4</div><div class="websites websites-4"></div></a></div>
-        <!-- <div class="carousel-cell3 w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site5</div><div class="websites websites-5"></div></a></div>
-        <div class="carousel-cell3 w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site6</div><div class="websites websites-6"></div></a></div>
-        <div class="carousel-cell3 w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site7</div><div class="websites websites-7"></div></a></div>
-        <div class="carousel-cell3 w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site8</div><div class="websites websites-8"></div></a></div>
-        <div class="carousel-cell3 w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site9</div><div class="websites websites-9"></div></a></div>
-        <div class="carousel-cell3 w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project-link blue_box text-sideways w3-center"><div class="text w3-xlarge">Site10</div><div class="websites websites-10"></div></a></div> -->
+      <p class="w3-xxlarge projects_container_header">Websites</p>
+      <!-- carousel -->
+      <div class="w3-container project_links_container" data-flickity='{ "groupCells": true, "wrapAround": true, "pageDots": false }'>
+        <!-- large screen cells -->
+        <div class="carousel_cell_large carouselCell w3-hide-medium w3-hide-small"><a href="https://ideck802.github.io/construction-site/" class="project_link blue_box text_sideways w3-center"><div class="text w3-large">Construction Website Demo</div><div class="websites websites-1"></div></a></div>
+        <div class="carousel_cell_large carouselCell w3-hide-medium w3-hide-small"><a href="https://ideck802.github.io/fakekeyboardad/" class="project_link blue_box text_sideways w3-center"><div class="text w3-large">Keyboard Product Page</div><div class="websites websites-2"></div></a></div>
+        <div class="carousel_cell_large carouselCell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site3</div><div class="websites websites-3"></div></a></div>
+        <div class="carousel_cell_large carouselCell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site4</div><div class="websites websites-4"></div></a></div>
+        <!-- <div class="carousel_cell_large carouselCell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site5</div><div class="websites websites-5"></div></a></div>
+        <div class="carousel_cell_large carouselCell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site6</div><div class="websites websites-6"></div></a></div>
+        <div class="carousel_cell_large carouselCell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site7</div><div class="websites websites-7"></div></a></div>
+        <div class="carousel_cell_large carouselCell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site8</div><div class="websites websites-8"></div></a></div>
+        <div class="carousel_cell_large carouselCell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site9</div><div class="websites websites-9"></div></a></div>
+        <div class="carousel_cell_large carouselCell w3-hide-medium w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site10</div><div class="websites websites-10"></div></a></div> -->
+        <!-- medium screen cells -->
+        <div class="carousel_cell_medium carouselCell w3-hide-large w3-hide-small"><a href="https://ideck802.github.io/construction-site/" class="project_link blue_box text_sideways w3-center"><div class="text w3-large">Construction Website Demo</div><div class="websites websites-1"></div></a></div>
+        <div class="carousel_cell_medium carouselCell w3-hide-large w3-hide-small"><a href="https://ideck802.github.io/fakekeyboardad/" class="project_link blue_box text_sideways w3-center"><div class="text w3-large">Keyboard Product Page</div><div class="websites websites-2"></div></a></div>
+        <div class="carousel_cell_medium carouselCell w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site3</div><div class="websites websites-3"></div></a></div>
+        <div class="carousel_cell_medium carouselCell w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site4</div><div class="websites websites-4"></div></a></div>
+        <!-- <div class="carousel_cell_medium carouselCell w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site5</div><div class="websites websites-5"></div></a></div>
+        <div class="carousel_cell_medium carouselCell w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site6</div><div class="websites websites-6"></div></a></div>
+        <div class="carousel_cell_medium carouselCell w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site7</div><div class="websites websites-7"></div></a></div>
+        <div class="carousel_cell_medium carouselCell w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site8</div><div class="websites websites-8"></div></a></div>
+        <div class="carousel_cell_medium carouselCell w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site9</div><div class="websites websites-9"></div></a></div>
+        <div class="carousel_cell_medium carouselCell w3-hide-large w3-hide-small"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site10</div><div class="websites websites-10"></div></a></div> -->
+        <!-- small screen cells -->
+        <div class="carousel_cell_small carouselCell w3-hide-large w3-hide-medium"><a href="https://ideck802.github.io/construction-site/" class="project_link blue_box text_sideways w3-center"><div class="text w3-large">Construction Website Demo</div><div class="websites websites-1"></div></a></div>
+        <div class="carousel_cell_small carouselCell w3-hide-large w3-hide-medium"><a href="https://ideck802.github.io/fakekeyboardad/" class="project_link blue_box text_sideways w3-center"><div class="text w3-large">Keyboard Product Page</div><div class="websites websites-2"></div></a></div>
+        <div class="carousel_cell_small carouselCell w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site3</div><div class="websites websites-3"></div></a></div>
+        <div class="carousel_cell_small carouselCell w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site4</div><div class="websites websites-4"></div></a></div>
+        <!-- <div class="carousel_cell_small carouselCell w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site5</div><div class="websites websites-5"></div></a></div>
+        <div class="carousel_cell_small carouselCell w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site6</div><div class="websites websites-6"></div></a></div>
+        <div class="carousel_cell_small carouselCell w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site7</div><div class="websites websites-7"></div></a></div>
+        <div class="carousel_cell_small carouselCell w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site8</div><div class="websites websites-8"></div></a></div>
+        <div class="carousel_cell_small carouselCell w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site9</div><div class="websites websites-9"></div></a></div>
+        <div class="carousel_cell_small carouselCell w3-hide-large w3-hide-medium"><a href="#test" target="_blank" class="project_link blue_box text_sideways w3-center"><div class="text w3-xlarge">Site10</div><div class="websites websites-10"></div></a></div> -->
       </div>
     </div>
   </div>
 
-  <!-- About Section -->
+  <!-- ABOUT ME PAGE LINK -->
   <div class="w3-container more_about w3-center rotating_title2" style="padding:64px 16px">
     <a href="about.html" class="blue_box w3-xlarge rotating_child_back">Learn More About Me <i class="fas fa-arrow-right"></i></a>
   </div>
 
-  <!-- Footer -->
+  <!-- BOTTOM OF PAGE FOOTER -->
   <footer class="w3-center">
+    <!-- social media shortcuts -->
     <div class="w3-xlarge blue_box">
       <a href="https://www.facebook.com/isaac.decker.980315/"><i class="fab fa-facebook-square"></i></a>
       <a href="mailto:ideck802@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -159,10 +161,10 @@ body, html, .main_content {
       <!-- <a href="#"><i class="fab fa-twitter-square"></i></a>
       <a href="#"><i class="fab fa-linkedin"></i></a> -->
     </div>
+    <!-- credit -->
     <p>This site was made by <a href="index.html" class="blue_box">Isaac</a></p>
   </footer>
 </div>
-
 
 <script src="scripts/rotating_forward.js"></script>
 <script src="scripts/rotating_backward.js"></script>
@@ -171,15 +173,6 @@ body, html, .main_content {
 !function(t){"use strict";var a=t("[data-slides]"),s=a.data("slides"),e=s.length,n=function(){a.css("background-image",'url("'+s[Math.floor(Math.random()*e)]+'")').show(0,function(){setTimeout(n,5000)})};n()}(jQuery);
 </script>
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
@@ -196,6 +189,7 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 
+// Hide and show side menu and scroll invites
 window.onscroll = function() {checkScroll()};
 function checkScroll() {
   if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
@@ -214,6 +208,5 @@ function checkScroll() {
   }
 }
 </script>
-
 </body>
 </html>
