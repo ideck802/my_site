@@ -13,6 +13,9 @@ header span {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #e5e5e5;
 }
+header .w3-display-middle {
+  width: 80%;
+}
 /* header background image */
 .bgimg {
   position: absolute;
@@ -22,8 +25,13 @@ header span {
   height: 100%;
   background-position: center;
   background-size: cover;
-  background-image: url("../images/mac2.jpg");
   filter: grayscale(75%) blur(2px);
+}
+.no-webp .bgimg {
+  background-image: url("../images/mac2.jpg");
+}
+.webp .bgimg {
+  background-image: url("../images/mac2.webp");
 }
 
 /* SPINNING AND CHANGING 'ENJOY' TEXT*/
@@ -122,6 +130,8 @@ header span {
   font-family: 'Audiowide';
   font-weight: bold;
   font-size: 40px;
+  padding: 64px 16px;
+  padding-bottom: 0px;
   color: #028090;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #028090;
@@ -210,6 +220,7 @@ header span {
 /* ABOUT ME PAGE LINK/INVITE */
 .more_about {
   background: #242423;
+  padding: 64px 16px;
 }
 .more_about > a {
   display: inline-block;

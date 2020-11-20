@@ -10,36 +10,36 @@
 }
 
 /* individual images */
-.websites-1 {
+.no-webp .websites-1, .no-js .websites-1 {
   background-image: url('../images/construction-site-link.jpg');
 }
-.websites-2 {
-  background-image: url('../images/keyboard ad.jpg');
+.no-webp .websites-2, .no-js .websites-2 {
+  background-image: url('../images/keyboard-ad.jpg');
   background-position: right top;
   background-size: cover;
   width: 75%;
 }
-.websites-3 {
+.no-webp .websites-3, .no-js .websites-3 {
   background-image: url('../images/construction-site-link.jpg');
 }
-.websites-4 {
+.no-webp .websites-4, .no-js .websites-4 {
   background-image: url('../images/mac2.jpg');
 }
-.websites-5 {
+.no-webp .websites-5, .no-js .websites-5 {
   background-image: url('../images/construction-site-link.jpg');
 }
-.websites-6 {
+.no-webp .websites-6, .no-js .websites-6 {
   background-image: url('../images/mac2.jpg');
 }
-.websites-7 {
+.no-webp .websites-7, .no-js .websites-7 {
   background-image: url('../images/construction-site-link.jpg');
 }
-.websites-8 {
+.no-webp .websites-8, .no-js .websites-8 {
   background-image: url('../images/mac2.jpg');
 }
-.websites-9 {
+.no-webp .websites-9, .no-js .websites-9 {
   background-image: url('../images/construction-site-link.jpg');
 }
-.websites-10 {
+.no-webp .websites-10, .no-js .websites-10 {
   background-image: url('../images/mac2.jpg');
 }

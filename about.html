@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <title>Isaac Decker</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,18 +13,19 @@
 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/about.css">
+<link rel="stylesheet" href="./css/list-image-control_webp.css">
 <link rel="stylesheet" href="./css/list-image-control.css">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <body>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="mobile_menu w3-display-container w3-animate-top w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <button class="mobile_menu_close w3-button w3-display-topmiddle" onclick="w3_close()">X</button>
+<nav class="mobile_menu w3-display-container w3-animate-top w3-hide-medium w3-hide-large" id="mySidebar">
+  <button class="mobile_menu_close w3-display-topmiddle" onclick="w3_close()">X</button>
   <div class="mobile_menu_container w3-display-middle">
-    <a href="index.html" class="mobile_menu_link w3-button"><p class="w3-center">Projects</p></a>
-    <a href="about.html" class="mobile_menu_link w3-button"><p class="w3-center">About</p></a>
-    <a href="contact.html" class="mobile_menu_link w3-button"><p class="w3-center">Contact</p></a>
+    <a href="index.html" class="mobile_menu_link"><p class="w3-center">Projects</p></a>
+    <a href="about.html" class="mobile_menu_link"><p class="w3-center">About</p></a>
+    <a href="contact.html" class="mobile_menu_link"><p class="w3-center">Contact</p></a>
   </div>
 </nav>
 
@@ -56,7 +57,7 @@
 <!-- ALL MAIN CONTENT (in div so can move over for menu) -->
 <div class="main_content">
   <!-- ABOUT ME -->
-  <div class="w3-container about_me_header" style="padding:64px 16px;padding-bottom:0px;">
+  <div class="w3-container about_me_header">
     <p class="w3-center">ABOUT ME</p>
   </div>
 
@@ -106,7 +107,7 @@ more every day in other languages such as React and Python.</p>
   </footer>
 </div>
 
-
+<script src="scripts/modernizr-custom.js"></script>
 <script src="scripts/rotating_forward.js"></script>
 <script src="scripts/rotating_backward.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

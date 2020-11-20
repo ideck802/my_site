@@ -54,7 +54,7 @@ body {
 
 /* GLOBAL MENU STYLES */
 .menu_link {
-  background: #028090 !important;
+  background: #028090;
   font-size: 25px;
   font-family: 'Audiowide';
   font-weight: bold;
@@ -62,7 +62,6 @@ body {
   color: #e5e5e5;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #e5e5e5;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 10px;
   border-radius: 15px;
@@ -73,7 +72,7 @@ body {
     transition: transform .2s ease-in-out;
 }
 .menu_link:hover {
-  background: #242423 !important;
+  background: #242423;
   -webkit-text-stroke-color: #028090;
   color: #028090;
   -webkit-transform: rotate(4deg);
@@ -140,7 +139,7 @@ body {
 }
 .menu_link2 .sidebar_text {
   margin-bottom: 20px;
-  background: #028090 !important;
+  background: #028090;
   -webkit-text-stroke-color: #e5e5e5;
   border-radius: 15px;
   box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -150,7 +149,7 @@ body {
     transition: transform .2s ease-in-out;
 }
 .menu_link2:hover .sidebar_text {
-  background: #242423 !important;
+  background: #242423;
   -webkit-text-stroke-color: #028090;
   color: #028090;
   -webkit-transform: rotate(-176deg);
@@ -160,6 +159,7 @@ body {
 /* MENU FOR SMALL SCREENS */
 .mobile_menu {
   position: fixed;
+  display: none;
   top: 0px;
   height: 100%;
   width: 100%;
@@ -170,35 +170,46 @@ body {
     width: 100%;
 }
 .mobile_menu_close {
-  background: #028090 !important;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  background: #028090;
   font-size: 30px;
   font-family: 'Audiowide';
   font-weight: bold;
   color: #e5e5e5;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #028090;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #e5e5e5;
+  border: none;
   border-radius: 15px;
   margin-top: 20px;
   width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .mobile_menu_close:hover {
-  background: #242423 !important;
+  background: #242423;
   -webkit-text-stroke-color: #028090;
   color: #028090;
 }
 .mobile_menu_link {
-  background: #028090 !important;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  background: #028090;
   font-size: 25px;
   font-family: 'Audiowide';
   font-weight: bold;
   color: #e5e5e5;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #028090;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #e5e5e5;
   width: 80%;
@@ -206,13 +217,14 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 20px;
+  border: none;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
 }
 .mobile_menu_link:hover {
-  background: #242423 !important;
+  background: #242423;
   -webkit-text-stroke-color: #028090;
   color: #028090;
   -webkit-transform: rotate(4deg);
@@ -246,10 +258,10 @@ footer p {
   font-weight: bold;
   color: #e5e5e5;
 }
-footer > p > a {
+footer .blue_box {
   color: #e5e5e5;
-  margin: 0px !important;
-  padding: 10px !important;
+  margin: 0px;
+  padding: 10px;
 }
 footer > p > a:hover {
   color: #333533;

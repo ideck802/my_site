@@ -4,6 +4,8 @@
   font-family: 'Audiowide';
   font-weight: bold;
   font-size: 40px;
+  padding: 64px 16px;
+  padding-bottom: 0px;
   color: #028090;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #028090;
@@ -15,8 +17,8 @@
   background: #242423;
   font-family: 'Open Sans';
   color: #e5e5e5;
-  padding: 10% 10%;
-  padding-bottom: 5%;
+  padding: 6% 6%;
+  padding-bottom: 3%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* list of skills */
@@ -24,7 +26,7 @@
   background: #242423;
   font-family: 'Open Sans';
   color: #e5e5e5;
-  padding: 5% 10%;
+  padding: 3% 6%;
   border-radius: 0 0 15px 15px;
 }
 .my_skills > p {
