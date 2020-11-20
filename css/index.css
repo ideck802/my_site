@@ -27,7 +27,7 @@ header .w3-display-middle {
   background-size: cover;
   filter: grayscale(75%) blur(2px);
 }
-.no-webp .bgimg {
+.no-webp .bgimg, .no-js .bgimg {
   background-image: url("../images/mac2.jpg");
 }
 .webp .bgimg {
