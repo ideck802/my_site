@@ -63,15 +63,21 @@
 
   <!-- messaging form -->
   <div class="w3-container contact_me w3-large">
-    <form action="https://formspree.io/f/xoqykpbz" method="POST">
-      <!-- regular screens -->
+    <!-- smaller screens -->
+    <form class="w3-hide-medium w3-hide-large" action="https://formspree.io/f/xoqykpbz" method="POST">
+      <p class="w3-hide-medium w3-hide-large"><input class="w3-input" type="text" placeholder="Name" required name="name"></p>
+      <p class="w3-hide-medium w3-hide-large"><input class="w3-input" type="email" placeholder="Email" required name="email"></p>
+
+      <!-- all screens -->
+      <textarea class="w3-input" type="text" placeholder="Message" required name="message" rows="4"></textarea><br>
+      <button class="blue_box rotating_child_back" type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+    </form>
+    <!-- regular screens -->
+    <form class="w3-hide-small" action="https://formspree.io/f/xoqykpbz" method="POST">
       <p class="w3-hide-small reg_name_mail">
         <input class="w3-input" type="text" placeholder="Name" required name="name">
         <input class="w3-input" type="email" placeholder="Email" required name="email">
       </p>
-      <!-- smaller screens -->
-      <p class="w3-hide-medium w3-hide-large"><input class="w3-input" type="text" placeholder="Name" required name="name"></p>
-      <p class="w3-hide-medium w3-hide-large"><input class="w3-input" type="email" placeholder="Email" required name="email"></p>
 
       <!-- all screens -->
       <textarea class="w3-input" type="text" placeholder="Message" required name="message" rows="4"></textarea><br>
